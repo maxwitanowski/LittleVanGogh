@@ -20,10 +20,13 @@ const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const canvas = document.getElementById('sky');
   const hint = document.querySelector('.hero-hint');
   const svg = document.getElementById('tree'), blooms = document.getElementById('blooms');
-  if (matchMedia('(max-width: 640px)').matches) { // on a phone, zoom the picture in on the branch
-    svg.setAttribute('viewBox', '900 90 640 500');
-    svg.setAttribute('preserveAspectRatio', 'xMaxYMin meet');
-  }
+  const narrow = matchMedia('(max-width: 980px)'); // on a narrow screen, zoom the picture in on the branch
+  const frame = () => {
+    svg.setAttribute('viewBox', narrow.matches ? '900 90 640 500' : '0 0 1440 860');
+    svg.setAttribute('preserveAspectRatio', narrow.matches ? 'xMaxYMin meet' : 'xMidYMid slice');
+  };
+  frame();
+  narrow.addEventListener('change', frame);
   const sky = new Painting(canvas, structuredClone(THEMES.almond));
   const paintIn = () => { sky.cfg.speed = 2.2; sky.prepaint(110); sky.cfg.speed = 0.45; }; // fill fast, then drift slowly
   paintIn();

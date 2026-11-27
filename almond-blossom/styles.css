@@ -360,7 +360,11 @@ code { font-size: .9em; background: rgba(18, 63, 72, .08); padding: 1px 6px; bor
 .petal:nth-of-type(3n) { background: #ffd0da; }
 @keyframes fall { to { transform: translate(var(--dx), 110vh) rotate(540deg); } }
 .ribbon i { border-radius: 50%; }
-@media (max-width: 980px) { .hero-tree { opacity: .55; } }
+/* narrow screens: the branch sits above the headline (main.js zooms the picture in on it) */
+@media (max-width: 980px) {
+  .hero-tree { inset: 62px 0 auto 0; height: min(78vw, 400px); }
+  .hero-copy { padding-top: calc(min(78vw, 400px) + 50px); }
+}
 @media (prefers-reduced-motion: reduce) { .petal { display: none; } }
 
 /* ---------- phones ---------- */
@@ -398,7 +402,5 @@ code { font-size: .9em; background: rgba(18, 63, 72, .08); padding: 1px 6px; bor
   .map-frame iframe { height: 280px; }
   .book { padding: 70px 0 90px; }
   .foot { padding-bottom: 84px; }
-  .hero-copy { padding-top: 350px; }
   .hero h1 { font-size: clamp(2.5rem, 12.3vw, 3.4rem); }
-  .hero-tree { inset: 62px 0 auto 0; height: auto; aspect-ratio: 640 / 500; opacity: 1; }
 }
