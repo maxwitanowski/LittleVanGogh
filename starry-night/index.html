@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Little Van Gogh Art School | Kids' art classes in Bella Vista</title>
+<meta name="description" content="Weekend art classes for kids and teens at 7-9 Irvine Place, Bella Vista. Painting, drawing and a lot of happy mess.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Caveat+Brush&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#top" aria-label="Little Van Gogh Art School, home">
+    <svg class="brand-star" viewBox="0 0 48 48" aria-hidden="true">
+      <circle cx="24" cy="24" r="21" fill="#f5b914"/>
+      <path d="M24 9a15 15 0 1 0 15 15" fill="none" stroke="#e2711d" stroke-width="4" stroke-linecap="round"/>
+      <path d="M24 16a8 8 0 1 0 8 8" fill="none" stroke="#fff6d6" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+    <span class="brand-text">
+      <span class="brand-name">Little Van Gogh</span>
+      <span class="brand-sub">art school · Bella Vista</span>
+    </span>
+  </a>
+  <nav class="nav-links" aria-label="Main">
+    <a href="#classes">Classes</a>
+    <a href="#timetable">Timetable</a>
+    <a href="#easel">Have a go</a>
+    <a href="#visit">Visit</a>
+  </nav>
+  <a class="btn btn-yellow nav-cta" href="#book">Book a trial</a>
+</header>
+
+<main id="top">
+
+  <!-- HERO: a sky that keeps painting itself -->
+  <section class="hero">
+    <canvas id="sky" aria-hidden="true"></canvas>
+    <div class="hero-shade" aria-hidden="true"></div>
+
+    <div class="hero-copy">
+      <h1>Every kid has a <span class="swash">Starry Night</span> in them.</h1>
+      <p class="hero-lede">Weekend painting and drawing classes for kids and teens in Bella Vista. Real paint, real canvases, and nobody says "stay inside the lines".</p>
+      <div class="hero-actions">
+        <a class="btn btn-yellow btn-big" href="#book">Book a trial class</a>
+        <a class="btn btn-ghost btn-big" href="#classes">See the classes</a>
+      </div>
+    </div>
+
+    <p class="hero-hint" aria-hidden="true">
+      <svg viewBox="0 0 60 40"><path d="M56 6C40 2 20 8 8 30m0 0 1-12m-1 12 12-3" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      stir the sky with your mouse<br>click to add a star
+    </p>
+
+    <svg class="hero-hill" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true">
+      <path class="hill-back" d="M0 150c120-50 260-70 420-40s250 60 420 30 300-90 600-50v130H0z"/>
+      <path class="hill-front" d="M0 190c160-46 330-52 520-26s330 44 520 18 250-50 400-30v68H0z"/>
+    </svg>
+    <svg class="hero-cypress" viewBox="0 0 120 420" aria-hidden="true">
+      <path d="M58 6c16 44-10 60 14 104s-18 62 8 110-14 70 6 116c8 26-4 60-28 78-30-14-44-48-36-80 10-44-14-60 2-108s-8-64 8-108S44 40 58 6z" fill="#16314a"/>
+      <path d="M56 50c6 40-12 60 2 100m-8 30c-6 40 14 60 4 104m18-150c8 30-8 50 4 86" fill="none" stroke="#2f6b56" stroke-width="5" stroke-linecap="round"/>
+    </svg>
+  </section>
+
+  <!-- brush-word ribbon -->
+  <div class="ribbon" aria-hidden="true">
+    <div class="ribbon-track" id="ribbon">
+      <span>acrylics</span><i></i><span>charcoal</span><i></i><span>watercolour</span><i></i><span>oil pastels</span><i></i><span>clay</span><i></i><span>collage</span><i></i><span>big messy canvases</span><i></i><span>sketchbooks</span><i></i>
+    </div>
+  </div>
+
+  <!-- CLASSES: the gallery wall -->
+  <section class="classes" id="classes">
+    <div class="wrap">
+      <h2 class="reveal">Pick a spot on the wall</h2>
+      <p class="section-lede reveal">Small groups, sorted by age, so a five-year-old gets to splash and a twelve-year-old gets to properly learn how light works.</p>
+
+      <div class="wall" id="wall"><!-- cards built from CLASSES in main.js --></div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="steps">
+    <div class="wrap steps-grid">
+      <h2 class="reveal">How it goes</h2>
+      <ol class="step-list">
+        <li class="reveal">
+          <span class="step-num">1</span>
+          <h3>Come for a trial</h3>
+          <p>One class, no commitment. Your child paints something to take home and you both see if it clicks.</p>
+        </li>
+        <li class="reveal">
+          <span class="step-num">2</span>
+          <h3>Join for the term</h3>
+          <p>Same time each weekend. Every term has a theme, a new medium and one painting they'll be really proud of.</p>
+        </li>
+        <li class="reveal">
+          <span class="step-num">3</span>
+          <h3>Hang it up</h3>
+          <p>Term ends with a little exhibition. Family comes, work goes on the wall, artists take a bow.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- TIMETABLE -->
+  <section class="timetable" id="timetable">
+    <div class="wrap">
+      <h2 class="reveal">The weekend timetable</h2>
+      <p class="section-lede reveal">The studio is open Saturday and Sunday, 9am to 6:30pm. Tap a day.</p>
+
+      <div class="tt-tabs reveal" role="tablist">
+        <button class="tt-tab is-on" role="tab" aria-selected="true" data-day="sat">Saturday</button>
+        <button class="tt-tab" role="tab" aria-selected="false" data-day="sun">Sunday</button>
+      </div>
+      <ul class="tt-list reveal" id="ttList"><!-- built from TIMETABLE in main.js --></ul>
+      <p class="tt-note">Sample timetable for the design demo. Swap in the real class times in <code>main.js</code>.</p>
+    </div>
+  </section>
+
+  <!-- EASEL: paint right here -->
+  <section class="easel" id="easel">
+    <div class="wrap easel-grid">
+      <div class="easel-copy">
+        <h2 class="reveal">Go on, have a go</h2>
+        <p class="reveal">This canvas is yours. Grab a colour, make a mess, save it for the fridge.</p>
+
+        <div class="prompt reveal">
+          <span class="prompt-label">Stuck? Paint this:</span>
+          <p id="promptText">a sunflower that drank too much red cordial</p>
+          <button class="btn btn-small btn-navy" id="promptBtn" type="button">Another idea</button>
+        </div>
+
+        <div class="tools reveal">
+          <div class="pots" id="pots" role="radiogroup" aria-label="Paint colour"></div>
+          <div class="sizes" role="radiogroup" aria-label="Brush size">
+            <button type="button" class="size" data-size="5" aria-label="Small brush"><b style="--s:8px"></b></button>
+            <button type="button" class="size is-on" data-size="10" aria-label="Medium brush"><b style="--s:15px"></b></button>
+            <button type="button" class="size" data-size="18" aria-label="Large brush"><b style="--s:24px"></b></button>
+          </div>
+          <div class="tool-actions">
+            <button class="btn btn-small btn-ghost-dark" id="clearBtn" type="button">Start again</button>
+            <button class="btn btn-small btn-yellow" id="saveBtn" type="button">Save my painting</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="easel-stand reveal">
+        <div class="canvas-frame">
+          <canvas id="pad" width="1000" height="760" aria-label="Painting canvas"></canvas>
+        </div>
+        <div class="easel-ledge"></div>
+        <div class="easel-legs"><i></i><i></i><i></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="visit" id="visit">
+    <div class="garden" id="garden" aria-hidden="true"></div>
+    <div class="wrap visit-grid">
+      <div class="visit-copy">
+        <h2 class="reveal">Come and find us</h2>
+        <dl class="facts reveal">
+          <div><dt>Studio</dt><dd>7-9 Irvine Place<br>Bella Vista NSW 2153</dd></div>
+          <div><dt>Open</dt><dd>Saturday and Sunday<br>9:00am to 6:30pm</dd></div>
+          <div><dt>Call or text</dt><dd data-c="phone"></dd></div>
+          <div><dt>Email</dt><dd data-c="email"></dd></div>
+        </dl>
+        <a class="btn btn-navy reveal" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Little+van+Gogh+Art+Centre+7-9+Irvine+Pl+Bella+Vista+NSW+2153">Get directions</a>
+      </div>
+      <div class="map-frame reveal">
+        <iframe title="Map showing Little Van Gogh Art School in Bella Vista" loading="lazy"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=150.9405%2C-33.7445%2C150.9545%2C-33.7351&amp;layer=mapnik&amp;marker=-33.739797%2C150.947512"></iframe>
+        <span class="tape tape-a"></span><span class="tape tape-b"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOK -->
+  <section class="book" id="book">
+    <div class="wrap book-grid">
+      <div class="book-copy">
+        <h2>Book a trial class</h2>
+        <p>Tell us who's coming and we'll text you back with a time that suits.</p>
+        <p class="book-or">Rather just ring? <span data-c="phone"></span></p>
+      </div>
+      <form class="book-form" id="bookForm" novalidate>
+        <label>Your name<input name="parent" autocomplete="name" required></label>
+        <label>Mobile<input name="phone" type="tel" autocomplete="tel" inputmode="tel" required></label>
+        <label>Artist's name<input name="child" required></label>
+        <label>Artist's age<input name="age" type="number" min="3" max="18" required></label>
+        <label class="wide">Which class?
+          <select name="klass" id="klassSelect"></select>
+        </label>
+        <label class="wide">Anything we should know? <span class="opt">(optional)</span>
+          <textarea name="notes" rows="3"></textarea>
+        </label>
+        <button class="btn btn-yellow btn-big wide" type="submit">Send it</button>
+        <p class="form-msg wide" id="formMsg" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div>
+      <span class="brand-name">Little Van Gogh</span>
+      <span class="brand-sub">art school · Bella Vista</span>
+    </div>
+    <p>7-9 Irvine Place, Bella Vista NSW 2153<br><span data-c="phone"></span> · <span data-c="email"></span> · Sat and Sun, 9am to 6:30pm</p>
+    <p class="foot-demo">Design demo. Class names, ages, times and prices are placeholders until confirmed.</p>
+  </div>
+</footer>
+
+<script src="../shared/content.js"></script>
+<script src="../shared/paint.js"></script>
+<script src="main.js"></script>
+<script>fillMarquee(document.getElementById("ribbon")); fillContact();</script>
+</body>
+</html>
