@@ -67,6 +67,9 @@ function fillMarquee(track, pxPerSecond = 45) {
   a.style.cssText = 'position:fixed;z-index:60;left:16px;bottom:16px;padding:11px 18px;border-radius:999px;' +
     'font:700 .95rem/1 var(--body, sans-serif);text-decoration:none;color:var(--ink,#111);background:var(--white,#fff);' +
     'border:3px solid var(--ink,#111);box-shadow:4px 4px 0 var(--ink,#111)';
+  if (matchMedia('(max-width: 640px)').matches) { // smaller on a phone so it covers less
+    Object.assign(a.style, { left: '10px', bottom: '10px', padding: '8px 13px', fontSize: '.8rem', borderWidth: '2px', boxShadow: '3px 3px 0 var(--ink,#111)' });
+  }
   document.body.append(a);
 })();
 

@@ -71,9 +71,12 @@
     .bar { padding: 0 20px 22px; }
     .bar + .bar { border-left: 0; border-top: 4px solid #101828; }
     .bar canvas { width: 100vw; height: 62svh; }
-    .bar p, .num { display: none; }
+    .bar p { display: none; }
+    .num { font-size: 1.5rem; margin-bottom: 6px; }
+    .bars:hover .bar:not(:hover) { filter: none; }
     .open { margin-top: 12px; padding: 9px 16px; }
-    .icon { top: auto; bottom: 24px; left: auto; right: 20px; width: 56px; }
+    .icon { top: auto; bottom: 26px; left: auto; right: 20px; width: 56px; }
+    .bar:last-child .icon { bottom: 50px; }
     .bar:first-child { padding-top: 70px; }
     .bar:last-child { padding-bottom: 46px; }
     .top span { display: none; }

@@ -59,7 +59,10 @@ const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
     heads.push(head);
     return head;
   };
-  [[53, 310], [62, 450], [71, 350], [80, 520], [89, 400], [97, 300]].forEach(([x, h]) => plant(x, h, false));
+  const row = matchMedia('(max-width: 640px)').matches // on a phone they line up along the bottom
+    ? [[9, 330], [26, 430], [43, 300], [60, 450], [78, 340], [94, 410]]
+    : [[53, 310], [62, 450], [71, 350], [80, 520], [89, 400], [97, 300]];
+  row.forEach(([x, h]) => plant(x, h, false));
 
   // click the sky: a sunflower grows up to where you clicked
   const planted = [];

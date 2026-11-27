@@ -20,6 +20,10 @@ const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const canvas = document.getElementById('sky');
   const hint = document.querySelector('.hero-hint');
   const svg = document.getElementById('tree'), blooms = document.getElementById('blooms');
+  if (matchMedia('(max-width: 640px)').matches) { // on a phone, zoom the picture in on the branch
+    svg.setAttribute('viewBox', '900 90 640 500');
+    svg.setAttribute('preserveAspectRatio', 'xMaxYMin meet');
+  }
   const sky = new Painting(canvas, structuredClone(THEMES.almond));
   const paintIn = () => { sky.cfg.speed = 2.2; sky.prepaint(110); sky.cfg.speed = 0.45; }; // fill fast, then drift slowly
   paintIn();
