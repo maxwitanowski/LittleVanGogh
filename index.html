@@ -29,7 +29,7 @@
   .bar canvas { position: absolute; z-index: -2; left: 50%; top: 50%; translate: -50% -50%; width: 62vw; height: 100svh; }
   .bar::after { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--shade); transition: opacity .4s; }
 
-  .num { font: 2rem/1 "Caveat Brush", cursive; rotate: -4deg; display: inline-block; margin-bottom: 14px; position: relative; z-index: 1; transition: translate .45s cubic-bezier(.3, 1.4, .4, 1); }
+  .num { font: 2rem/1 "Caveat Brush", cursive; rotate: -4deg; align-self: flex-start; margin-bottom: 14px; position: relative; z-index: 1; transition: translate .45s cubic-bezier(.3, 1.4, .4, 1); }
   .bar h2 { margin: 0; font-weight: 400; font-size: clamp(2.2rem, 4.6vw, 4.6rem); line-height: .98; text-shadow: 4px 4px 0 var(--edge); transition: translate .45s cubic-bezier(.3, 1.4, .4, 1); }
   .bar p { margin: 14px 0 0; max-width: 30ch; text-shadow: var(--soft, 0 2px 0 rgba(0, 0, 0, .35)); }
   .open {
