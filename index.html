@@ -29,7 +29,7 @@
   .bar canvas { position: absolute; z-index: -2; left: 50%; top: 50%; translate: -50% -50%; width: 62vw; height: 100svh; }
   .bar::after { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--shade); transition: opacity .4s; }
 
-  .num { font: 2rem/1 "Caveat Brush", cursive; rotate: -4deg; display: inline-block; margin-bottom: 10px; }
+  .num { font: 2rem/1 "Caveat Brush", cursive; rotate: -4deg; display: inline-block; margin-bottom: 14px; position: relative; z-index: 1; transition: translate .45s cubic-bezier(.3, 1.4, .4, 1); }
   .bar h2 { margin: 0; font-weight: 400; font-size: clamp(2.2rem, 4.6vw, 4.6rem); line-height: .98; text-shadow: 4px 4px 0 var(--edge); transition: translate .45s cubic-bezier(.3, 1.4, .4, 1); }
   .bar p { margin: 14px 0 0; max-width: 30ch; text-shadow: var(--soft, 0 2px 0 rgba(0, 0, 0, .35)); }
   .open {
@@ -41,7 +41,7 @@
   .icon { position: absolute; top: clamp(86px, 14vh, 130px); left: clamp(18px, 2.6vw, 44px); width: clamp(54px, 6vw, 86px); transition: rotate .7s cubic-bezier(.3, 1.6, .5, 1), scale .4s; }
 
   .bar:hover, .bar:focus-visible { flex-grow: 1.7; outline: none; }
-  .bar:hover h2, .bar:focus-visible h2 { translate: 0 -6px; }
+  .bar:hover h2, .bar:focus-visible h2, .bar:hover .num, .bar:focus-visible .num { translate: 0 -6px; }
   .bar:hover .open, .bar:focus-visible .open { transform: translate(-2px, -2px) rotate(-2deg); box-shadow: 7px 7px 0 var(--ink); }
   .bar:hover .open b, .bar:focus-visible .open b { translate: 6px 0; }
   .bar:hover .icon, .bar:focus-visible .icon { rotate: 144deg; scale: 1.12; }
